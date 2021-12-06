@@ -1,0 +1,40 @@
+===============================================================================
+
+                            Tema MN 2021
+                    Interpolare aplicata pe imagini
+
+===============================================================================
+IMPLEMENTARE
+
+Pentru implementarea functiilor de resize si rotate am folosit matrice
+de rotatie si de transformare, pentru a afla cu ajutorul vectorilor de forma
+[x, y], valorile xp si yp necesare interpolarii. Cu ajutorul coordonatelor
+xp si yp din imaginea initiale le foloseam in algoritmul de interpolare.
+Aflam astfel valoarea pixelului din imaginea finala, pe care apoi o converteam 
+la uint8.
+
+Sistemele de ecuatii liniare au fost  rezolvate atat folosind inversele date
+in enunt ale matricelor de transformare, cat si metoda Octave "\".
+
+Prelucrarea imaginilor RGB se reduce la separarea celor 3 canale 
+(red, green, blue) si prelucrarea acestora folosind functiile scrise
+pentru imagini alb-negru. Imaginea rezultata se obtine prin concatenarea
+celor 3 matrice.
+
+Pentru implementare nu am folosit alte functii in afara de cele existente deja
+in schelet.
+
+DIFICULTATI INTAMPINATE
+
+Principala dificultate a fost schimbarea in cadrul functiilor deja implementate
+a indecsilor care prelucreaza liniile si coloanele intrucat a fost neintuitiv.
+In rest totul a fost explicat in detaliu atat prin TODO-uri, cat si in enuntul
+temei.
+
+FEEDBACK
+
+Ideea temei este foarte buna si a ajutat pentru intelegerea mai buna a 
+interpolarilor. Scheletul a fost super bine documentat si comentat.
+Ca parte negativa este inversarea indecsilor care nu a fost explicata si 
+a dat batai de cap.
+
